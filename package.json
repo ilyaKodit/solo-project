@@ -1,0 +1,33 @@
+{
+  "name": "solo-project",
+  "version": "1.0.0",
+  "description": "Solo project",
+  "main": "app.js",
+  "scripts": {
+    "start": "npx nodemon --ignore './sessions' app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ilyaKodit/solo-project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ilyaKodit/solo-project/issues"
+  },
+  "homepage": "https://github.com/ilyaKodit/solo-project#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.0",
+    "hbs": "^4.0.6",
+    "mongoose": "^5.8.3",
+    "morgan": "^1.9.1",
+    "path": "^0.12.7",
+    "session-file-store": "^1.3.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}

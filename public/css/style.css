@@ -1,0 +1,123 @@
+*{
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    margin: 0;
+    padding: 0;
+}
+
+:active, :hover, :focus {
+    outline: 0;
+    outline-offset: 0;
+}
+
+/* LAYOUT header */
+
+header{
+    position: relative;
+}
+
+.header_h1{
+    color: rgba(255, 138, 138, 0.78);
+    text-align: center;
+    margin: 20px 0;
+    font-family: 'Raleway', sans-serif;
+    /*height: 100%;*/
+}
+
+.header_img{
+    position: absolute;
+    top: 6px;
+    /*left: 50%;*/
+    height: 70px;
+}
+
+/* INDEX */
+.calculator > p{
+    text-align: center;
+    margin: 25px 0;
+    font-size: 20px;
+    font-family: 'Philosopher', sans-serif;
+    color: #282828;
+}
+
+.inp{
+    display: block;
+    margin: 0 auto 15px auto;
+    width: 200px;
+    height: 25px;
+    border: none;
+    border-bottom: 1px solid rgba(255,0,0,0.6);
+    text-align: center;
+    outline:none;
+    font-family: 'Philosopher', sans-serif;
+}
+
+.inp:focus{
+    background-color: rgba(255, 138, 138, 0.2);
+}
+
+.btn{
+    display: block;
+    margin: 0 auto 35px auto;
+    width: 200px;
+    height: 28px;
+    border: none;
+    background-color: rgba(255, 138, 138, 0.78);
+    text-align: center;
+    outline:none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: 'Philosopher', sans-serif;
+    font-size: 16px;
+    color: #282828;
+}
+.btn:focus{
+    background-color: rgba(255, 138, 138, 1);
+}
+
+/* INDEX info */
+
+.info_board{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.container{
+    margin: 10px;
+    padding: 10px;
+    background-color: rgba(255,0,0,0.1);
+    height: 150px;
+    width: 260px;
+    border-radius: 15px;
+
+}
+
+.container > p{
+    font-family: 'Philosopher', sans-serif;
+    text-align: center;
+    color: #282828;
+}
+
+.info_where{
+    font-weight: bold;
+    margin: 3px 0 8px 0;
+    font-size: 12px;
+}
+
+.info_quantity, .info_volume, .info_basis_price{
+    font-size: 12px;
+}
+
+.info_weight, .info_discount_price{
+    margin-bottom: 8px;
+    font-size: 12px;
+}
+
+.info_delivery, .info_insurance, .info_payment_travel{
+    font-size: 11px;
+}
