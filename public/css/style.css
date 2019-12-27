@@ -29,17 +29,47 @@ header{
 .header_img{
     position: absolute;
     top: 6px;
-    /*left: 50%;*/
+    left: 46%;
     height: 70px;
 }
+
+/* LAYOUT nav */
+
+.nav{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 30px;
+}
+
+.nav_btn{
+    display: block;
+    margin: 0 0 10px 10px;
+    width: 130px;
+    height: 23px;
+    border: none;
+    background-color: rgba(255, 138, 138, 0.78);
+    text-align: center;
+    outline:none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: 'Philosopher', sans-serif;
+    font-size: 13px;
+    color: #303030;
+}
+
+.nav_btn:focus{
+    background-color: rgba(255, 138, 138, 1);
+}
+
 
 /* INDEX */
 .calculator > p{
     text-align: center;
     margin: 25px 0;
-    font-size: 20px;
+    font-size: 16px;
     font-family: 'Philosopher', sans-serif;
-    color: #282828;
+    color: #303030;
 }
 
 .inp{
@@ -70,8 +100,8 @@ header{
     cursor: pointer;
     border-radius: 5px;
     font-family: 'Philosopher', sans-serif;
-    font-size: 16px;
-    color: #282828;
+    font-size: 15px;
+    color: #303030;
 }
 .btn:focus{
     background-color: rgba(255, 138, 138, 1);
@@ -91,33 +121,59 @@ header{
     margin: 10px;
     padding: 10px;
     background-color: rgba(255,0,0,0.1);
-    height: 150px;
+    /*height: 150px;*/
     width: 260px;
     border-radius: 15px;
 
 }
 
+.size_medium{
+    font-family: 'Philosopher', sans-serif;
+    text-align: center;
+    color: #393939;
+}
+
+.size_small{
+    font-size: 10px;
+    color: #393939;
+}
+
 .container > p{
     font-family: 'Philosopher', sans-serif;
     text-align: center;
-    color: #282828;
+    color: #393939;
+    font-size: 11px;
+}
+
+.container > p > span{
+    font-family: 'Philosopher', sans-serif;
+    text-align: center;
+    margin-left: 6px;
+    color: #131313;
 }
 
 .info_where{
     font-weight: bold;
-    margin: 3px 0 8px 0;
-    font-size: 12px;
-}
-
-.info_quantity, .info_volume, .info_basis_price{
-    font-size: 12px;
+    margin-bottom: 8px;
 }
 
 .info_weight, .info_discount_price{
     margin-bottom: 8px;
-    font-size: 12px;
 }
 
-.info_delivery, .info_insurance, .info_payment_travel{
-    font-size: 11px;
+
+/* STATUS */
+
+.status_form > p{
+    text-align: center;
+    margin: 25px 0;
+    font-size: 16px;
+    font-family: 'Philosopher', sans-serif;
+    color: #303030;
+}
+
+.alert{
+    text-align: center;
+    font-size: 22px;
+    font-family: 'Philosopher', sans-serif;
 }

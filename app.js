@@ -6,7 +6,7 @@ const hbs = require('hbs');
 // const FileStore = require("session-file-store")(session);
 const bodyParser = require('body-parser');
 
-const port =  process.env.PORT || 3001;
+const port =  process.env.PORT || 3000;
 
 const app = express();
 
@@ -25,8 +25,13 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.json());
 
-const routesRouter = require('./routes/routes');
-app.use('/', routesRouter);
+const indexRouter = require('./routes/index');
+const paymentRouter = require('./routes/payment');
+const statusRouter = require('./routes/status');
+
+app.use('/', indexRouter);
+app.use('/payment', paymentRouter);
+app.use('/status', statusRouter);
 
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(logger('dev'));
