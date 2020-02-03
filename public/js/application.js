@@ -97,19 +97,8 @@ if (document.querySelector('.calculator')){
             document.querySelector('.info_board').innerHTML = resultBackend + document.querySelector('.info_board').innerHTML;
 
         }
-
     });
-
 }
-
-
-
-
-
-
-
-
-
 
 
 if (document.querySelector('.status_form')){
@@ -193,7 +182,6 @@ if (document.querySelector('.status_form')){
             document.querySelector('.info_board').innerHTML = resultBackend + document.querySelector('.info_board').innerHTML;
 
         }
-
     });
 }
 
