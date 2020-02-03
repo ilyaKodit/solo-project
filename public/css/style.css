@@ -66,7 +66,7 @@ header{
 /* INDEX */
 .calculator > p{
     text-align: center;
-    margin: 25px 0;
+    margin: 25px 5px;
     font-size: 16px;
     font-family: 'Philosopher', sans-serif;
     color: #303030;
